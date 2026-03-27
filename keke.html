@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Home Dashboard</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Tabs -->
+    <input type="radio" name="room" id="kitchen-tab" checked>
+    <input type="radio" name="room" id="bedroom-tab">
+    <input type="radio" name="room" id="mainroom-tab">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2><i class="fa-solid fa-house"></i> Kirabo's Home</h2>
+        <label for="kitchen-tab"><i class="fa-solid fa-utensils"></i> Kitchen</label>
+        <label for="bedroom-tab"><i class="fa-solid fa-bed"></i> Bedroom + <i class="fa-solid fa-shower"></i></label>
+        <label for="mainroom-tab"><i class="fa-solid fa-couch"></i> Main Room</label>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+        <h1>Dashboard</h1>
+
+        <!-- Kitchen -->
+        <div class="room kitchen">
+            <h2><i class="fa-solid fa-utensils"></i> Kitchen</h2>
+            <div class="cards">
+
+                <div class="card">
+                    <h3><i class="fa-solid fa-lightbulb"></i> Light</h3>
+                    <input type="checkbox" id="kitchen-light">
+                    <label for="kitchen-light" class="toggle"></label>
+                    <p class="status"><span class="off">OFF</span><span class="on">ON</span></p>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fa-solid fa-plug"></i> Socket</h3>
+                    <input type="checkbox" id="kitchen-socket">
+                    <label for="kitchen-socket" class="toggle"></label>
+                    <p class="status"><span class="off">OFF</span><span class="on">ON</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bedroom -->
+        <div class="room bedroom">
+            <h2><i class="fa-solid fa-bed"></i> Bedroom + <i class="fa-solid fa-shower"></i></h2>
+            <div class="cards">
+
+                <div class="card">
+                    <h3><i class="fa-solid fa-lightbulb"></i> Light</h3>
+                    <input type="checkbox" id="bedroom-light">
+                    <label for="bedroom-light" class="toggle"></label>
+                    <p class="status"><span class="off">OFF</span><span class="on">ON</span></p>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fa-solid fa-fan"></i> Fan</h3>
+                    <input type="checkbox" id="bedroom-fan">
+                    <label for="bedroom-fan" class="toggle"></label>
+                    <p class="status"><span class="off">OFF</span><span class="on">ON</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main Room -->
+        <div class="room mainroom">
+            <h2><i class="fa-solid fa-couch"></i> Main Room</h2>
+            <div class="cards">
+
+                <div class="card">
+                    <h3><i class="fa-solid fa-tv"></i> TV</h3>
+                    <input type="checkbox" id="main-tv">
+                    <label for="main-tv" class="toggle"></label>
+                    <p class="status"><span class="off">OFF</span><span class="on">ON</span></p>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fa-solid fa-snowflake"></i> AC</h3>
+                    <input type="checkbox" id="main-ac">
+                    <label for="main-ac" class="toggle"></label>
+                    <p class="status"><span class="off">OFF</span><span class="on">ON</span></p>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fa-solid fa-lock"></i> Door Lock</h3>
+                    <input type="checkbox" id="main-door">
+                    <label for="main-door" class="toggle"></label>
+                    <p class="status"><span class="off">OFF</span><span class="on">ON</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Environment -->
+        <div class="environment">
+            <h2><i class="fa-solid fa-leaf"></i> Environment</h2>
+            <p><i class="fa-solid fa-temperature-high"></i> Temperature: 25°C</p>
+            <p><i class="fa-solid fa-droplet"></i> Humidity: 60%</p>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
